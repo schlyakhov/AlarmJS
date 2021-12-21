@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Часы</h2>
+      <div class="clock">
+        <span class="clock_hours"></span>: <span class="clock_minutes"></span>:
+        <span class="clock_seconds"></span>
+      </div>
+      <audio src="alarm_sound.mp3"></audio>
+      <h2>Будильник</h2>
+      <div class="alarm">
+        <select name="alarm_hours" id="alarm_hours"></select>
+        <select name="alarm_minutes" id="alarm_minutes"></select>
+        <select name="alarm_seconds" id="alarm_seconds"></select>
+        <button class="set_alarm">Поставить Будильник</button>
+      </div>
+      <div class="alarm_info">
+        <span class="alarm_text">Будильник установлен на :</span>
+        <button class="cancel_alarm">Удалить Будильник</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
